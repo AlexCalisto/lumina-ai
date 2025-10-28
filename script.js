@@ -7,7 +7,7 @@ const fileUploadWrapper = promptForm.querySelector(".file-upload-wrapper");
 const themeToggleBtn = document.querySelector("#theme-toggle-btn");
 
 // Backend endpoint (replaces exposed Gemini API URL)
-const API_URL = "https://lumina-ai-judo.onrender.com";
+const API_URL = "https://lumina-ai-judo.onrender.com/chat";
 
 let controller, typingInterval;
 const chatHistory = [];
@@ -190,4 +190,5 @@ suggestions.addEventListener('wheel', (e) => {
     suggestions.scrollLeft += e.deltaY;
   }
 });
+
 
